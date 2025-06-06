@@ -96,14 +96,6 @@ Creating gw-ingress branch and pushing changes...
    Add 'Preview' label after creating the PR
 ```
 
-## What happens next
-
-1. ArgoCD picks up the PRs with Preview labels
-2. Deployments start automatically
-3. You can verify in Groundcover
-4. Test your changes in the PR environment
-5. When done, merge/close the PRs to clean up
-
 ## Troubleshooting
 
 **Git clone fails:**
@@ -121,7 +113,6 @@ Creating gw-ingress branch and pushing changes...
 
 ## Implementation Details
 
-- **Language**: Go (for simplicity and tooling)
 - **Dependencies**: Standard library only
 - **Workspace**: Creates temporary directory, cleans up after
 - **Git operations**: Uses system git commands only
